@@ -1,0 +1,13 @@
+$themeColor: '';
+
+// sidebar
+$menuBg: #304156;
+$menuText: #bfcbd9;
+$menuActiveText: #409eff;
+
+:export {
+  themeColor: $themeColor;
+  menuBg: $menuBg;
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+}

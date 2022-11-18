@@ -1,0 +1,197 @@
+/* reset样式 */
+html,
+body,
+div,
+span,
+applet,
+object,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  // font:inherit;
+  font-weight: normal;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+// table {
+//   border-collapse: collapse;
+//   border-spacing: 0;
+// }
+// th,
+// td {
+//   vertical-align: middle;
+// }
+a {
+  outline: none;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+}
+a:focus {
+  outline: none;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: -webkit-focus-ring-color auto 0;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+html,
+body {
+  height: 100%;
+}
+
+@font-face {
+  font-family: PingFangSC-Regular;
+  src: url('../font/PingFangSC-Regular.ttf');
+}
+
+@font-face {
+  font-family: Impact-Font;
+  src: url('../font/Impact.ttf');
+}
+
+#app {
+  min-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.15;
+  color: #212735;
+  background: #f2f2f2;
+  font-family: PingFangSC-Regular, PingFang SC, Helvetica Neue, Helvetica, Hiragino Sans GB, Arial,
+    sans-serif;
+  overflow-x: auto;
+}
+
+.el-input__inner, .el-textarea__inner, * {
+  font-family: PingFangSC-Regular, PingFang SC, Helvetica Neue, Helvetica, Hiragino Sans GB, Arial;
+}
+
+// 表单提示文字样式
+.help-text {
+  margin-top: 5px;
+  color: #737373;
+  line-height: 1.15;
+  font-size: 12px;
+  word-break: break-all;
+}
+
+.page-list {
+  height: 100%;
+}
+
+// 坐标弹窗样式
+.el-dialog {
+  .map-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    .search, .coordinate {
+      display: flex;
+      align-items: center;
+      margin-right: 50px;
+      .el-input {
+        width: 250px;
+      }
+      .el-button {
+        margin: 0 20px;
+      }
+    }
+  }
+}
+
+// 弹窗样式
+.el-dialog {
+  .el-dialog__header {
+    background-color: #f2f2f2;
+    padding: 0;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+// 组件替换图标样式
+.replace-popper-class {
+  .chart-list {
+    .chart-item {
+      padding: 3px 5px;
+      margin: 3px;
+      cursor: pointer;
+      &:hover {
+        background: #f6f6f6;
+      }
+    }
+  }
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-border-radius: 0;
+}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  -webkit-border-radius: 6px;
+  outline-offset: -2px;
+  background-color: rgba(216, 222, 235, 0.2);
+  // border: 2px solid rgba(216, 222, 235, 0.2);
+  filter: alpha(opacity = 50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+::-webkit-scrollbar-thumb:hover {
+  height: 50px;
+  background-color: rgba(216, 222, 235, 0.4);
+  -webkit-border-radius: 6px;
+}
